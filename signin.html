@@ -73,7 +73,7 @@
     <section class="arrange hi">
     <div class="form-group">
       <label for="exampleInputEmail1">User Name</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
       
     </div>
     <div class="form-group">
@@ -84,7 +84,7 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Remember Me</label>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <a type="submit" class="btn btn-primary" onclick="savedata()" href="./index.html" >Submit</a>
     </section>
   </form>
 
@@ -219,5 +219,26 @@
   <!-- Footer -->
   <div class="last"></div>
   </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<!-- <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDPI6uttAuwBPpvq3-sCcnMdA15TORdV2o",
+    authDomain: "proyecto-eb0f7.firebaseapp.com",
+    projectId: "proyecto-eb0f7",
+    storageBucket: "proyecto-eb0f7.appspot.com",
+    messagingSenderId: "111140544185",
+    appId: "1:111140544185:web:3c08176503fd16f1774568",
+    measurementId: "G-26FBXC002M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script> -->
+<script src="./js/auth.js" ></script>
 </body>
 </html>
